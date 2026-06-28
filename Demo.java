@@ -6,35 +6,26 @@ class Demo{
         f1.setSize(400,400);
         f1.setLocationRelativeTo(null);
         f1.setDefaultCloseOperation(2);
+        f1.setLayout(new FlowLayout(FlowLayout.LEFT));
+        //0->FlowLayout.CENTER
+		//1->FlowLayout.RIGHT
+		//2->FlowLayout.LEFT
+
+        JButton b1=new  JButton("Add");
+        b1.setFont(new Font("",1,30));
+        f1.add(b1);
+        JButton b2=new  JButton("Delete");
+        b2.setFont(new Font("",1,30));
+        b2.setSize(300,400);
+        f1.add(b2);
+        JButton b3=new  JButton("Update");
+        b3.setFont(new Font("",1,30));
+        f1.add(b3);
+        JButton b4=new  JButton("View");
+        b4.setFont(new Font("",1,30));
+        f1.add(b4);
         
-        JButton [] buttons=new JButton[5];
-        String [] btnText={"North","South","East","West","Center"};
         
-        for (int i = 0; i < buttons.length; i++){
-			buttons[i]=new JButton(btnText[i]);
-			buttons[i].setSize(30,30);
-			buttons[i].setFont(new Font("",1,30));
-			f1.add(btnText[i],buttons[i]);
-		}
-		
-        
-        /*
-        JButton b1=new  JButton("North");
-        b1.setText("North");
-        f1.add("North",b1);
-        JButton b2=new  JButton("South");
-        b2.setText("South");
-        f1.add("South",b2);
-        JButton b3=new  JButton("East");
-        b3.setText("East");
-        f1.add("East",b3);
-        JButton b4=new  JButton("West");
-        b4.setText("West");
-        f1.add("West",b4);
-        JButton b5=new  JButton("Center");
-        b5.setText("Center");
-        f1.add("Center",b5);
-        */
         //f1.pack();
         f1.setVisible(true);
         
