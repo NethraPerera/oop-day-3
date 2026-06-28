@@ -1,12 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
-class Calculator{
-	JFrame f2;
+class Calculator extends JFrame{
+	//JFrame f2;
 	Calculator(){}
 	Calculator(String name){
-		f2=new JFrame(name);
+		//f2=new JFrame(name);
 	}
-	public void setSize(int length,int width){
+	/*public void setSize(int length,int width){
 		f2.setSize(length,width);
 	} 
 	public void setLocationRelativeTo(Component location){
@@ -17,7 +17,7 @@ class Calculator{
 	}
 	public void setVisible(boolean isVisible){
 		f2.setVisible(isVisible);
-	}
+	}*/
 }
 class Demo{
 	public static void main(String args[]){
