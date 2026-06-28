@@ -7,6 +7,18 @@ class Demo{
         f1.setLocationRelativeTo(null);
         f1.setDefaultCloseOperation(2);
         
+        JButton [] buttons=new JButton[5];
+        String [] btnText={"North","South","East","West","Center"};
+        
+        for (int i = 0; i < buttons.length; i++){
+			buttons[i]=new JButton(btnText[i]);
+			buttons[i].setSize(30,30);
+			buttons[i].setFont(new Font("",1,30));
+			f1.add(btnText[i],buttons[i]);
+		}
+		
+        
+        /*
         JButton b1=new  JButton("North");
         b1.setText("North");
         f1.add("North",b1);
@@ -22,7 +34,7 @@ class Demo{
         JButton b5=new  JButton("Center");
         b5.setText("Center");
         f1.add("Center",b5);
-        
+        */
         //f1.pack();
         f1.setVisible(true);
         
